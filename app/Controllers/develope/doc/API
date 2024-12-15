@@ -1,0 +1,6 @@
+#에러로그
+/api/error/page/(enum = applier:string)/add
+#post 값
+applierIdx:int = iv_applier idx
+questionIdx:int = iv_question idx
+pullPage:string = 현재페이지 전체 url

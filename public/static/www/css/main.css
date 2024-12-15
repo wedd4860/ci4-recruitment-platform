@@ -1,0 +1,462 @@
+@charset "utf-8";
+
+#mcontent {position:relative; padding-bottom:200px}
+#mcontent .cont {max-width:94%;}
+
+@media screen and (max-width:768px){
+	#mcontent {padding-bottom:30vw}
+	#mcontent .cont {max-width:92%;}
+}
+
+@media screen and (max-width:480px){
+	#mcontent {padding-bottom:38vw}
+}
+
+
+/* --------------------------------------------------메인 슬라이드-------------------------------------------------- */
+.main_slBox {position:relative;}
+.main_sl .item img {width:100%}
+
+.main_slBox .progress {position:absolute; bottom:31px; left:4%; display: block; width:50%; height:4px; background:rgba(255,255,255,0.5); border-radius: 30px; overflow: hidden;  background-image: linear-gradient(to right, #505bf0, #505bf0); background-repeat: no-repeat; background-size: 0 100%; transition: background-size .4s ease-in-out;}
+.main_slBox .sr-only {position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0;}
+
+
+@media screen and (max-width:768px){
+	.main_slBox .progress {bottom:4.1vw}
+}
+
+@media screen and (max-width:480px){
+	.main_slBox .progress {bottom:5.1vw}
+}
+
+
+/* --------------------------------------------------검색버튼-------------------------------------------------- */
+.m_shBox {margin-top:58px; position:relative; border:2px solid #505bf0; background:#fff; border-radius:18px; padding:15px 30px; height:73px;}
+.m_shBox a {display:block;}
+.m_shBox a > div {display:inline-block; vertical-align:middle; margin-right:15px;}
+.m_shBox .txtBox {font-size:25px; color:#c0c1c1; font-weight:400 !important}
+
+
+@media screen and (max-width:768px){
+	.m_shBox {margin-top:6.8vw; border-radius:2.2vw; padding:1.5vw 4vw; height:10vw;}
+	.m_shBox a > div {margin-right:1.8vw;}
+	.m_shBox .iconBox img {height:4vw}
+	.m_shBox .txtBox {font-size:3.5vw;}
+}
+
+@media screen and (max-width:480px){
+	.m_shBox {margin-top:7.8vw; border-radius:3.2vw; padding:2vw 4.5vw; height:13vw;}
+	.m_shBox .iconBox img {height:5vw}
+	.m_shBox .txtBox {font-size:4vw;}
+}
+
+
+/* --------------------------------------------------포지션 배너-------------------------------------------------- */
+.main .position_bn {margin-top:40px;}
+.main .position_bn img {width:100%;}
+
+
+@media screen and (max-width:768px){
+	.main .position_bn {margin-top:5vw;}
+}
+
+@media screen and (max-width:480px){
+	.main .position_bn {margin-top:6vw;}
+}
+
+
+/* --------------------------------------------------알람박스-------------------------------------------------- */
+.main .alarmBox {position:relative; background:#f9f9f9; border:1px solid #b0b0b0; border-radius:15px; margin-top:40px; padding:20px 30px;}
+.main .alarmBox .tlt {font-size:25px;}
+.main .alarmBox .tlt .icon {margin-right:8px; display:inline-block; vertical-align:top}
+.main .alarmBox .product_desc {color:#868585;margin-top:10px;} 
+.main .alarmBox .arrow_icon {position:absolute; top:50%; right:30px; transform: translateY(-50%); width:14px; height:24px; display:block; background:url(/static/www/img/main/m_alarm_arrow.png) no-repeat 0 0; background-size:100%}
+
+@media screen and (max-width:768px){
+	.main .alarmBox {border-radius:2.5vw; margin-top:5vw; padding:3vw 4vw;}
+	.main .alarmBox .tlt {font-size:3.2vw;}
+	.main .alarmBox .tlt .icon {margin-right:1.2vw;}
+	.main .alarmBox .tlt .icon img {height:3.8vw}
+	.main .alarmBox .product_desc {margin-top:2vw;} 
+	.main .alarmBox .arrow_icon {right:4vw; width:2.1vw; height:3.5vw;}
+}
+
+@media screen and (max-width:480px){
+	.main .alarmBox {border-radius:3.5vw; margin-top:6vw; padding:3vw 5vw;}
+	.main .alarmBox .tlt {font-size:4.2vw;}
+	.main .alarmBox .tlt .icon {margin-right:1.5vw;}
+	.main .alarmBox .tlt .icon img {height:4.8vw}
+	.main .alarmBox .product_desc {margin-top:2vw;} 
+	.main .alarmBox .arrow_icon {right:5vw; width:2.6vw; height:4.3vw;}
+}
+
+
+/* --------------------------------------------------웹기획.PM 찾는중-------------------------------------------------- */
+.main .lkf_sl {overflow:hidden}
+.main .lkf_sl a {color: #343434; font-size: 26px;}
+.main .lkf_sl .item {position:relative; border:1px solid #dbdbdb; border-radius:20px; margin:0 10px; overflow:hidden}
+.main .lkf_sl .slick-list {padding:0 20px !important; margin-left:-30px;}
+
+.main .lkf_sl .itemBox {position:relative; width:100%}
+
+.main .lkf_sl .img {width:236px; height:236px;}
+.main .lkf_sl .img img {width:100%; height:100%;}
+
+.main .lkf_sl .img, .main .lkf_sl .txtBox {display:inline-block; vertical-align:top}
+.main .lkf_sl .txtBox {position:relative; width:430px; padding:25px 30px 0; height:100%; box-sizing:border-box}
+.main .lkf_sl .txtBox > div {line-height:1.2em}
+
+.main .lkf_sl .txtBox .tlt {font-weight:700; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.main .lkf_sl .txtBox .product_desc {margin-top:5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+
+.main .lkf_sl .stxt {color:#afafaf; font-size:18px; margin-top:13px; font-weight:400; border:1px solid #dbdbdb; display:inline-block; border-radius:7px; padding:3px 10px;}
+.main .lkf_sl .gtxtBox {position:relative; color:#afafaf; font-size:20px; margin-top:50px; overflow:hidden; padding-right:1px; box-sizing:border-box}
+
+.main .lkf_sl .gtxtBox .gdata {text-align:right; margin-bottom:20px;}
+.main .lkf_sl .gtxtBox .gtxt {float:left;}
+.main .lkf_sl .gtxtBox .gtxt span {font-size:15px; vertical-align:top; display:inline-block; margin:0 5px}
+
+.main .lkf_sl .gtxtBox .gBtn {float:right;}
+.main .lkf_sl .gtxtBox .gBtn a {display:inline-block; padding:0 14px; height:32px; line-height:30px; background:#505bf0; color:#fff; font-size:16px; border-radius:5px}
+
+.main .lkf_sl .bookmark_iconBox {position:absolute; top:23px; right:30px}
+.main .lkf_sl .bookmark_icon {border:0; background:none; background-size:100% !important; width:35px; height:33px;}
+.main .lkf_sl .bookmark_icon.off {background:url(/static/www/img/inc/star_icon_off.png) no-repeat 0 0;}
+.main .lkf_sl .bookmark_icon.on {background:url(/static/www/img/inc/star_icon_on.png) no-repeat 0 0;}
+
+.main .lkf_sl .more_btn {border-top:1px solid #ddd; padding-top:30px; margin-top:35px;}
+.main .lkf_sl .more_btn a {font-size:24px; color:#343434}
+
+@media screen and (max-width:768px){
+	.main .lkf_sl a {font-size:3.8vw;}
+	.main .lkf_sl .item {border-radius:2.5vw; margin:0 1.5vw;}
+	.main .lkf_sl .slick-list {padding:0 4vw !important; margin-left:-5.5vw;}
+
+	.main .lkf_sl .img {width:31.6vw; height:30.6vw;}
+
+	.main .lkf_sl .txtBox {width:48.5vw; padding:3vw 3vw 0;}
+	.main .lkf_sl .txtBox .product_desc {margin-top:0.5vw;}
+
+	.main .lkf_sl .stxt {font-size:2.4vw; margin-top:2.3vw; border-radius:0.7vw; padding:0.5vw 2vw;}
+
+	.main .lkf_sl .gtxtBox .gdata {margin-bottom:2vw;}
+
+	.main .lkf_sl .gtxtBox {font-size:2.8vw; margin-top:3vw;}
+	.main .lkf_sl .gtxtBox .gtxt span {font-size:2vw; margin:0 0.5vw}
+
+	.main .lkf_sl .gtxtBox .gBtn a {padding:0 2.4vw; height:4.2vw; line-height:4vw; font-size:2.6vw; border-radius:0.5vw}
+
+	.main .lkf_sl .bookmark_iconBox {top:2.3vw; right:3vw}
+	.main .lkf_sl .bookmark_icon {width:4.5vw; height:4.3vw;}
+
+	.main .lkf_sl .more_btn {padding-top:4vw; margin-top:4.5vw;}
+	.main .lkf_sl .more_btn a {font-size:3.4vw;}
+}
+
+@media screen and (max-width:480px){
+	.main .lkf_sl a {font-size:4.4vw;}
+	.main .lkf_sl .item {border-radius:3vw; margin:0 2vw;}
+	.main .lkf_sl .slick-list {padding:0 5vw !important; margin-left:-6.5vw;}
+
+	.main .lkf_sl .img {width:32.6vw; height:32.6vw;}
+
+	.main .lkf_sl .txtBox {width:46vw; padding:3vw 3vw 0;}
+	.main .lkf_sl .txtBox .product_desc {margin-top:0.5vw;}
+
+	.main .lkf_sl .stxt {font-size:3vw; margin-top:2.3vw; border-radius:0.7vw; padding:0.5vw 2vw;}
+	.main .lkf_sl .gtxtBox {font-size:3.4vw; margin-top:4vw;}
+	.main .lkf_sl .gtxtBox .gtxt span {font-size:3vw;}
+
+	.main .lkf_sl .gtxtBox .gBtn a {padding:0 2vw; height:5vw; line-height:4.8vw; font-size:3vw; border-radius:0.5vw}
+
+	.main .lkf_sl .bookmark_iconBox {top:2.3vw; right:3vw}
+	.main .lkf_sl .bookmark_icon {width:5.5vw; height:5.3vw;}
+
+	.main .lkf_sl .more_btn {padding-top:4vw; margin-top:4.5vw;}
+	.main .lkf_sl .more_btn a {font-size:4vw;}
+}
+
+
+/* --------------------------------------------------내 맘에 쏙 드는 회사 찾기-------------------------------------------------- */
+.main .company_fdcont {position:relative; background:#f3f3f3; padding:50px 0 70px; overflow:hidden}
+.main .company_fdBox .mtltBox .mtlt {max-width:92% !important; margin:0 auto;}
+
+.main .company_fdcont .cont {max-width:100% !important}
+
+.main .company_fd_sl .slick-list {padding:0 30px !important; margin-left:-20px;}
+.main .company_fdcont .item {margin:0 20px;}
+
+.main .company_fd_txtBox {position:relative; overflow:hidden; margin-bottom:-2px; z-index:2}
+.main .company_fd_txtBox .txtBox {position:absolute; top:20px; left:0; font-size:31px}
+.main .company_fd_txtBox .txtBox > div {line-height:1.3em;}
+.main .company_fd_txtBox .crcBox {float:right;}
+
+.main .company_fd_wBox {position:relative; background:#fff; border-radius:20px; padding:48px 36px 30px; z-index:1}
+.main .company_fd_wBox li {position:relative; margin:0 15px 20px 0;}
+.main .company_fd_wBox a > div {display:inline-block; vertical-align:top}
+.main .company_fd_wBox li > a {color:#343434; font-size:26px;}
+.main .company_fd_wBox .img {width:168px; height:144px; border-radius:15px; margin-right:28px; overflow:hidden}
+.main .company_fd_wBox .img img {width:100%; height:100%}
+
+.main .company_fd_wBox .txtBox {width:380px; padding-top:13px;}
+.main .company_fd_wBox .txtBox > div {line-height:1.2em}
+.main .company_fd_wBox .txtBox .tlt {font-weight:700; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.main .company_fd_wBox .txtBox .product_desc {margin-top:5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+
+.main .company_fd_wBox .gtxt {color:#afafaf; font-size:20px; margin-top:13px}
+.main .company_fd_wBox .gtxt span {font-size:15px; vertical-align:top; display:inline-block; margin:0 5px}
+
+.main .company_fd_wBox .bookmark_iconBox {position:absolute; top:0; right:0}
+.main .company_fd_wBox .bookmark_icon {border:0; background:none; background-size:100% !important; width:35px; height:33px;}
+.main .company_fd_wBox .bookmark_icon.off {background:url(/static/www/img/inc/star_icon_off.png) no-repeat 0 0;}
+.main .company_fd_wBox .bookmark_icon.on {background:url(/static/www/img/inc/star_icon_on.png) no-repeat 0 0;}
+
+.main .company_fd_wBox .more_btn {border-top:1px solid #ddd; padding-top:30px; margin-top:35px;}
+.main .company_fd_wBox .more_btn a {font-size:24px; color:#343434}
+
+@media screen and (max-width:768px){
+	.main .company_fdcont {padding:6vw 0 8vw}
+	.main .company_fdcont .cont {max-width:100% !important}
+
+	.main .company_fd_sl .slick-list {padding:0 4vw !important; margin-left:-3vw;}
+	.main .company_fdcont .item {margin:0 2vw;}
+
+	.main .company_fd_txtBox .txtBox {top:2vw; font-size:3.5vw; width:60%}
+	.main .company_fd_txtBox .crcBox img {height:23.4vw}
+
+	.main .company_fd_wBox {border-radius:3vw; padding:4.8vw 4.6vw 4vw;}
+	.main .company_fd_wBox li {margin:0 2.5vw 3vw 0;}
+	.main .company_fd_wBox li > a {font-size:3.8vw;}
+	.main .company_fd_wBox .img {width:22.8vw; height:19.5vw; border-radius:2.5vw; margin-right:2.8vw}
+
+	.main .company_fd_wBox .txtBox {width:60%; padding-top:2vw}
+	.main .company_fd_wBox .txtBox .product_desc {margin-top:3px;}
+
+	.main .company_fd_wBox .gtxt {font-size:2.8vw; margin-top:2.3vw}
+	.main .company_fd_wBox .gtxt span {font-size:2vw; margin:0 0.5vw}
+
+	.main .company_fd_wBox .bookmark_icon {width:4.5vw; height:4.3vw;}
+
+	.main .company_fd_wBox .more_btn {padding-top:4vw; margin-top:4.5vw;}
+	.main .company_fd_wBox .more_btn a {font-size:3.4vw;}
+}
+
+@media screen and (max-width:480px){
+	.main .company_fdcont {padding:7vw 0 9vw}
+
+	.main .company_fd_sl .slick-list {padding:0 5.5vw !important; margin-left:-3.5vw;}
+	.main .company_fdcont .item {margin:0 2.5vw !important;}
+
+	.main .company_fd_txtBox .txtBox {margin-top:1vw; font-size:4.4vw; width:68%}
+	.main .company_fd_txtBox .crcBox img {height:24.6vw}
+
+	.main .company_fd_wBox {border-radius:5vw; padding:5.8vw 4.6vw 5vw;}
+	.main .company_fd_wBox li {margin:0 3.5vw 4vw 0;}
+	.main .company_fd_wBox li > a {font-size:4.2vw;}
+	.main .company_fd_wBox .img {width:25.8vw; height:21.5vw; border-radius:3.5vw; margin-right:3.8vw}
+
+	.main .company_fd_wBox .txtBox {width:50%;}
+	.main .company_fd_wBox .txtBox .product_desc {margin-top:4px;}
+
+	.main .company_fd_wBox .gtxt {font-size:3.4vw; margin-top:3.3vw}
+	.main .company_fd_wBox .gtxt span {font-size:3vw;}
+
+	.main .company_fd_wBox .bookmark_icon {width:5.5vw; height:5.3vw;}
+
+	.main .company_fd_wBox .more_btn {padding-top:5vw; margin-top:5.5vw;}
+	.main .company_fd_wBox .more_btn a {font-size:4vw;}
+}
+
+
+/* --------------------------------------------------가이드&샘플영상 배너-------------------------------------------------- */
+.main .gu_mvBox {margin-top:70px;}
+.main .gu_mvBox img {width:100%;}
+
+
+@media screen and (max-width:768px){
+	.main .gu_mvBox {margin-top:8vw;}
+}
+
+@media screen and (max-width:480px){
+	.main .gu_mvBox {margin-top:9vw;}
+}
+
+
+/* --------------------------------------------------요즘 뜨는 기업에서 팀원 모집 중-------------------------------------------------- */
+.main .team_mb_sl {overflow:hidden}
+.main .team_mb_sl a {color: #343434; font-size: 26px;}
+.main .team_mb_sl .item {position:relative; border:1px solid #dbdbdb; border-radius:20px; margin:0 10px; overflow:hidden}
+.main .team_mb_sl .slick-list {padding:0 20px !important; margin-left:-30px;}
+
+.main .team_mb_sl .itemBox {position:relative; width:100%}
+
+.main .team_mb_sl .img {width:236px; height:236px;}
+.main .team_mb_sl .img img {width:100%; height:100%;}
+
+.main .team_mb_sl .img, .main .team_mb_sl .txtBox {display:inline-block; vertical-align:top}
+.main .team_mb_sl .txtBox {position:relative; width:430px; padding:25px 30px 0; height:100%; box-sizing:border-box}
+.main .team_mb_sl .txtBox > div {line-height:1.2em}
+
+.main .team_mb_sl .txtBox .tlt {font-weight:700; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.main .team_mb_sl .txtBox .product_desc {margin-top:5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+
+.main .team_mb_sl .stxt {color:#afafaf; font-size:18px; margin-top:13px; font-weight:400; border:1px solid #dbdbdb; display:inline-block; border-radius:7px; padding:3px 10px;}
+.main .team_mb_sl .gtxtBox {position:relative; color:#afafaf; font-size:20px; margin-top:50px; overflow:hidden; padding-right:1px; box-sizing:border-box}
+
+.main .team_mb_sl .gtxtBox .gtxt {float:left;}
+.main .team_mb_sl .gtxtBox .gtxt span {font-size:15px; vertical-align:top; display:inline-block; margin:0 5px}
+
+.main .team_mb_sl .gtxtBox .gdata {float:right;}
+
+.main .team_mb_sl .bookmark_iconBox {position:absolute; top:23px; right:30px}
+.main .team_mb_sl .bookmark_icon {border:0; background:none; background-size:100% !important; width:35px; height:33px;}
+.main .team_mb_sl .bookmark_icon.off {background:url(/static/www/img/inc/star_icon_off.png) no-repeat 0 0;}
+.main .team_mb_sl .bookmark_icon.on {background:url(/static/www/img/inc/star_icon_on.png) no-repeat 0 0;}
+
+.main .team_mb_sl .more_btn {border-top:1px solid #ddd; padding-top:30px; margin-top:35px;}
+.main .team_mb_sl .more_btn a {font-size:24px; color:#343434}
+
+@media screen and (max-width:768px){
+	.main .team_mb_sl a {font-size:3.8vw;}
+	.main .team_mb_sl .item {border-radius:2.5vw; margin:0 1.5vw;}
+	.main .team_mb_sl .slick-list {padding:0 4vw !important; margin-left:-5.5vw;}
+
+	.main .team_mb_sl .img {width:31.6vw; height:30.6vw;}
+
+	.main .team_mb_sl .txtBox {width:48.5vw; padding:3vw 3vw 0;}
+	.main .team_mb_sl .txtBox .product_desc {margin-top:0.5vw;}
+
+	.main .team_mb_sl .stxt {font-size:2.4vw; margin-top:2.3vw; border-radius:0.7vw; padding:0.5vw 2vw;}
+	.main .team_mb_sl .gtxtBox {font-size:2.8vw; margin-top:4vw;}
+	.main .team_mb_sl .gtxtBox .gtxt span {font-size:2vw; margin:0 0.5vw}
+
+	.main .team_mb_sl .bookmark_iconBox {top:2.3vw; right:3vw}
+	.main .team_mb_sl .bookmark_icon {width:4.5vw; height:4.3vw;}
+
+	.main .team_mb_sl .more_btn {padding-top:4vw; margin-top:4.5vw;}
+	.main .team_mb_sl .more_btn a {font-size:3.4vw;}
+}
+
+@media screen and (max-width:480px){
+	.main .team_mb_sl a {font-size:4.4vw;}
+	.main .team_mb_sl .item {border-radius:3vw; margin:0 2vw;}
+	.main .team_mb_sl .slick-list {padding:0 5vw !important; margin-left:-6.5vw;}
+
+	.main .team_mb_sl .img {width:32.6vw; height:32.6vw;}
+
+	.main .team_mb_sl .txtBox {width:45.5vw; padding:3vw 3vw 0;}
+	.main .team_mb_sl .txtBox .product_desc {margin-top:0.5vw;}
+
+	.main .team_mb_sl .stxt {font-size:3vw; margin-top:2.3vw; border-radius:0.7vw; padding:0.5vw 2vw;}
+	.main .team_mb_sl .gtxtBox {font-size:3.4vw; margin-top:4vw;}
+	.main .team_mb_sl .gtxtBox .gtxt span {font-size:3vw;}
+
+	.main .team_mb_sl .bookmark_iconBox {top:2.3vw; right:3vw}
+	.main .team_mb_sl .bookmark_icon {width:5.5vw; height:5.3vw;}
+
+	.main .team_mb_sl .more_btn {padding-top:4vw; margin-top:4.5vw;}
+	.main .team_mb_sl .more_btn a {font-size:4vw;}
+}
+
+
+/* --------------------------------------------------실제 면접 질문 연습하기-------------------------------------------------- */
+.main .qsBox {position:relative; overflow:hidden}
+.main .qs_sl .item {position:relative; width:287px; height:220px; border:1px solid #dbdbdb; background:#f9f9f9; padding:25px; margin:0 10px; border-radius:20px; box-sizing:border-box}
+.main .qs_sl .slick-list {padding:0 20px !important; margin-left:0px;}
+
+.main .qs_sl .item a {display:block; width:100%; height:100%; color: #343434; font-size: 24px;}
+
+.main .qs_sl .Btn {position:absolute; bottom:25px; left:25px; width:28px; height:28px; line-height:22px; font-size:18px; text-align:center; border:2px solid #343434; border-radius:50%;}
+.main .qs_sl .Btn i {font-weight:700;}
+
+@media screen and (max-width:768px){
+	.main .qs_sl .item {width:29.7vw; height:30vw; padding:3vw; margin:0 1.2vw; border-radius:2vw;}
+	.main .qs_sl .slick-list {padding:0 1.2vw !important; margin-left:2vw}
+
+	.main .qs_sl .item a {font-size: 3.4vw; line-height:1.3em}
+
+	.main .qs_sl .Btn {bottom:3vw; left:3vw; width:3.8vw; height:3.8vw; line-height:3.2vw; font-size:2.8vw;}
+}
+
+@media screen and (max-width:480px){
+	.main .qs_sl .item {width:50vw; height:35vw; border-radius:3vw;}
+	.main .qs_sl .item a {font-size:4vw;}
+	.main .qs_sl .Btn {width:5vw; height:5vw; line-height:4.5vw; font-size:3.5vw; border-width:1px}
+}
+
+
+/* --------------------------------------------------핏의기업 배너-------------------------------------------------- */
+.main .perfit_bn {margin-top:70px;}
+.main .perfit_bn img {width:100%;}
+
+
+@media screen and (max-width:768px){
+	.main .perfit_bn {margin-top:8vw;}
+}
+
+@media screen and (max-width:480px){
+	.main .perfit_bn {margin-top:9vw;}
+}
+
+
+/* --------------------------------------------------AI 레포트 구경가기-------------------------------------------------- */
+.main .ai_reportBox {position:relative; overflow:hidden}
+.main .ai_report_sl .item {position:relative; width:287px; height:320px; border:1px solid #dbdbdb; padding:25px; margin:0 10px; border-radius:20px; box-sizing:border-box}
+.main .ai_report_sl .slick-list {padding:0 20px !important; margin-left:0px;}
+
+.main .ai_report_sl .item a {display:block; width:100%; height:100%; color: #343434; font-size: 23px;}
+
+.main .ai_report_sl .img {width:135px; height:135px; margin:0 auto; border-radius:50%; overflow:hidden}
+.main .ai_report_sl .img img {width:100%; height:100%;}
+
+.main .ai_report_sl .classBox {margin-top:15px;}
+.main .ai_report_sl .psBox {margin-top:20px;}
+
+@media screen and (max-width:768px){
+	.main .ai_report_sl .item {width:29.7vw; height:40vw; padding:3vw 2vw; margin:0 1.2vw; border-radius:2vw;}
+	.main .ai_report_sl .slick-list {padding:0 1.2vw !important; margin-left:2vw}
+
+	.main .ai_report_sl .item a {font-size:3vw; line-height:1.3em}
+
+	.main .ai_report_sl .img {width:14.5vw; height:14.5vw;}
+
+	.main .ai_report_sl .classBox {margin-top:2.5vw;}
+	.main .ai_report_sl .psBox {margin-top:3vw;}
+}
+
+@media screen and (max-width:480px){
+	.main .ai_report_sl .item {width:50vw; height:45vw; border-radius:3vw;}
+
+	.main .ai_report_sl .item a {font-size:3.8vw;}
+
+	.main .ai_report_sl .img {width:15.5vw; height:15.5vw;}
+
+	.main .ai_report_sl .classBox {margin-top:2.5vw;}
+	.main .ai_report_sl .psBox {margin-top:3vw;}
+}
+
+
+/* --------------------------------------------------하단배너-------------------------------------------------- */
+.main .mbottom_bn_slBox .control_box {position:absolute; bottom:15px; right:20px; z-index:2;}
+.main .mbottom_bn_slBox .control_box a {display:block; background:rgba(0,0,0,0.6); color:#fff; padding:0 20px; height:35px; line-height:35px; font-size:18px; border-radius:50px;}
+.main .mbottom_bn_sl .item {position:relative; border-radius:20px; overflow:hidden}
+.main .mbottom_bn_sl img {width:100%;}
+
+.main .mbottom_bn_slBox .pagingInfo {margin-right:30px;}
+
+
+@media screen and (max-width:768px){
+	.main .mbottom_bn_slBox .control_box {bottom:2vw; right:3vw;}
+	.main .mbottom_bn_slBox .control_box a {padding:0 3vw; height:5.5vw; line-height:5.5vw; font-size:2.8vw; border-radius:6vw;}
+	.main .mbottom_bn_sl .item {border-radius:4vw;}
+
+	.main .mbottom_bn_slBox .pagingInfo {margin-right:4vw;}
+}
+
+@media screen and (max-width:480px){
+	.main .mbottom_bn_slBox .control_box {bottom:3vw; right:4vw;}
+	.main .mbottom_bn_slBox .control_box a {height:6.5vw; line-height:6.5vw; font-size:3.8vw; border-radius:4vw;}
+	.main .mbottom_bn_sl {border-radius:4vw;}
+
+	.main .mbottom_bn_slBox .pagingInfo {margin-right:5vw;}
+}

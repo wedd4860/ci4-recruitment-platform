@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+/* interest */
+
+.graph-box-price {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 60px;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.multi-range-slider {
+    position: relative;
+    z-index: 1;
+    height: 10px;
+}
+
+.multi-range-slider>.gray-line {
+    position: absolute;
+    left: 0;
+    top: 0.5vh;
+    bottom: 0;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 10px;
+    border-radius: 50px;
+    background: #efefef;
+}
+
+.multi-range-slider>.point-line {
+    position: absolute;
+    z-index: 2;
+    left: 0%;
+    right: 0%;
+    top: 0;
+    bottom: 0;
+    height: 10px;
+    border-radius: 50px;
+    background-color: #505bf0;
+}
+
+.multi-range-slider>.chiBtn {
+    position: relative;
+    width: calc(100% - 35px);
+    height: 10px;
+}
+
+.multi-range-slider>.chiBtn>.chiBtnIn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 37px;
+    height: 37px;
+    background: #fff;
+    border: 1px solid #b0b0b0;
+    border-radius: 50%;
+    z-index: 3;
+}
+
+.multi-range-slider>.chiBtn>.min_btn {
+    left: 0%;
+}
+
+.multi-range-slider>.chiBtn>.max_btn {
+    left: 100%;
+}
+
+input[type="range"] {
+    position: absolute;
+    /* opacity로 가린 것을 이벤트도 비활성화하기 위해 */
+    pointer-events: none;
+    -webkit-appearance: none;
+    z-index: 2;
+    height: 10px;
+    width: 100%;
+    opacity: 0;
+    padding: 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    /* 겹쳐진 두 thumb를 모두 활성화 */
+    pointer-events: all;
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    border: 1 solid #000;
+    background-color: red;
+    cursor: pointer;
+    /* appearance를 해야 위의 스타일들을 볼 수 있음 */
+    -webkit-appearance: none;
+}
+
+@media screen and (max-width:768px) {
+    .graph-box-price {
+        height: 4.7vw;
+        margin-top: 1vw;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+        width: 4.7vw;
+        height: 4.7vw;
+    }
+    .multi-range-slider>.chiBtn {
+        width: calc(100% - 4.7vw);
+        height: 1.2vw;
+    }
+    .graph-box-price .point-line {
+        height: 1.2vw;
+    }
+    .graph-box-price .gray-line {
+        height: 1.2vw;
+    }
+    .graph-box-price .chiBtn>.chiBtnIn {
+        width: 4.7vw;
+        height: 4.7vw;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .graph-box-price {
+        height: 5.7vw;
+        margin-top: 2vw;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+        width: 5.7vw;
+        height: 5.7vw;
+    }
+    .multi-range-slider>.chiBtn {
+        width: calc(100% - 5.7vw);
+        height: 1.4vw;
+    }
+    .graph-box-price .point-line {
+        height: 1.4vw;
+    }
+    .graph-box-price .gray-line {
+        height: 1.4vw;
+    }
+    .graph-box-price .chiBtn>.chiBtnIn {
+        width: 5.7vw;
+        height: 5.7vw;
+    }
+}

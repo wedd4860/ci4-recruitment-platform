@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+/* --------------------------------------------------스플래시-------------------------------------------------- */
+#splashBox {position:absolute; top:0; left:50%; transform:translateX(-50%); max-width:100%; width:100%; height:100%; color:#fff; background:#505bf0; overflow:hidden; z-index:10}
+#splashBox .img {position:absolute; top:45%; left:50%; transform:translate(-50%,-50%); width:100%}
+
+#splashBox .copy {position:absolute; bottom:5%; left:50%; transform:translateX(-50%); width:100%; font-size:22px;}
+
+@media screen and (max-width:768px){
+	#splashBox .img img {width:65%;}
+	#splashBox .copy {font-size:3vw}
+}
+
+@media screen and (max-width:480px){
+	#splashBox .copy {font-size:3.8vw}
+}
+
+@charset "utf-8";
+
+/* --------------------------------------------------스플래시-슬라이드-------------------------------------------------- */
+#sp_slBox {position:relative; width:100%; color:#343434; padding:120px 0 130px;}
+#sp_slBox:after {content:""; display:block; position:fixed; top:0; left:50%; transform:translateX(-50%); width:100%; height:100%; max-width:768px; height:100vh; background:#fff8ee; z-index:0}
+.sp_slcont {position:relative; z-index:1}
+#sp_slBox .img img {height:600px; margin:0 auto;}
+#sp_slBox .txtBox {margin-top:90px}
+#sp_slBox .txtBox .txt {font-size:43px; line-height:1.2em}
+#sp_slBox .txtBox .big {font-size:50px; font-weight:700; margin-top:50px; line-height:1.2em}
+
+#sp_slBox .slick-dots {margin-top:100px;}
+#sp_slBox .slick-dots li {position:relative; margin:0 5px; display:inline-block}
+#sp_slBox .slick-dots button {width:17px; height:17px; background:#e8e8e8; border-radius:50%; border:0; text-indent:-9999px}
+#sp_slBox .slick-dots .slick-active button {background:#505bf0}
+
+#sp_slBox .sp_btn {position:fixed; bottom:0; left:50%; max-width:768px; width:100%; transform:translateX(-50%);}
+#sp_slBox .sp_btn a {width:100%; height:90px; line-height:90px; text-align:center; background:#505bf0; font-size:36px; display:block; color:#fff}
+
+
+@media screen and (min-height:1081px){
+	#sp_slBox {padding:4vh 0 10vh;}
+	#sp_slBox .txtBox {margin-top:4vh}
+	#sp_slBox .txtBox .big {margin-top:3vh;}
+	#sp_slBox .slick-dots {margin-top:4.5vh;}
+}
+
+@media screen and (min-height:1200px){
+	#sp_slBox {padding:7vh 0 5vh;}
+	#sp_slBox .txtBox {margin-top:6vh}
+	#sp_slBox .txtBox .big {margin-top:4vh;}
+	#sp_slBox .slick-dots {margin-top:7.5vh;}
+}
+
+@media screen and (max-height:1080px){
+	#sp_slBox .img img {height:50vh;}
+	#sp_slBox {padding:4vh 0 10vh;}
+	#sp_slBox .txtBox {margin-top:4vh}
+	#sp_slBox .txtBox .big {margin-top:3vh;}
+	#sp_slBox .slick-dots {margin-top:4.5vh;}
+}
+
+
+@media screen and (max-width:768px){
+	#sp_slBox {padding:10vw 0 14vw;}
+	#sp_slBox .img img {height:60vw;}
+	#sp_slBox .txtBox {margin-top:8vw}
+	#sp_slBox .txtBox .txt {font-size:5.3vw;}
+	#sp_slBox .txtBox .big {font-size:6vw; margin-top:4vw;}
+
+	#sp_slBox .slick-dots {margin-top:8vw;}
+	#sp_slBox .sp_btn a {height:11vw; line-height:11vw; font-size:4.6vw;}
+}
+
+@media screen and (max-width:480px){
+	#sp_slBox {padding:12vw 0 14vw;}
+	#sp_slBox .img img {height:80vw;}
+	#sp_slBox .txtBox {margin-top:11vw}
+	#sp_slBox .txtBox .txt {font-size:5.3vw;}
+	#sp_slBox .txtBox .big {font-size:6vw; margin-top:6vw;}
+
+	#sp_slBox .slick-dots {margin-top:11vw;}
+	#sp_slBox .slick-dots button {width:14px; height:14px;}
+	#sp_slBox .sp_btn a {height:14vw; line-height:14vw; font-size:5.6vw;}
+}
